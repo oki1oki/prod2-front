@@ -4,7 +4,9 @@
     "license": "UNLICENSED",
     "type": "module",
     "scripts": {
-        "start": "vite solution"
+        "start": "vite solution",
+        "build": "vite build",
+        "preview": "vite preview"
     },
     "devDependencies": {
         "prettier": "3.4.2",
