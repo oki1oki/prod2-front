@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <title>Test</title>
+    </head>
+    <body class="hidden">
+        <header>
+            <a class="tests-link" href="/" test-id="back-to-test-list-page">Тесты</a>
+        </header>
+
+        <main>
+            <nav class="navbar" test-id="navigation">
+                <ul class="navbar-list"></ul>
+            </nav>
+            <section class="run-test">
+                <h1 class="test-title" test-id="test-title"></h1>
+                <div class="questions-container"></div>
+
+                <div class="pagination">
+                    <button class="prev-question-btn" test-id="prev-question">⬅</button>
+                    <button class="next-question-btn" test-id="next-question">⮕</button>
+                </div>
+
+                <div class="test-actions">
+                    <button class="end-test-btn" test-id="finish-button">Завершить</button>
+                    <button class="repeat-test-btn" test-id="reset-test-button">Пройти тест заново</button>
+                </div>
+            </section>
+        </main>
+
+        <dialog class="modal" test-id="modal"></dialog>
+
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>

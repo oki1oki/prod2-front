@@ -1,0 +1,16 @@
+{
+    "name": "test-2025-frontend",
+    "version": "1.0.0",
+    "license": "UNLICENSED",
+    "type": "module",
+    "scripts": {
+        "start": "vite solution"
+    },
+    "devDependencies": {
+        "prettier": "3.4.2",
+        "vite": "^6.0.4"
+    },
+    "engines": {
+        "node": ">=20"
+    }
+}

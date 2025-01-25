@@ -1,0 +1,249 @@
+@import url(./styles/main.css);
+
+body {
+    min-height: 100dvh;
+    padding: 32px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 32px;
+}
+
+.tests-list {
+    width: 720px;
+    max-height: 50%;
+    overflow-y: auto;
+    margin: 0 auto;
+    padding: 16px;
+    border: 1px solid var(--color-border-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    animation: opacity-animate 0.3s;
+}
+
+@media (max-width: 768px) {
+    .tests-list {
+        max-width: 100%;
+    }
+}
+
+.tests-list-item {
+    padding: 4px 24px 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tests-list-item:hover {
+    background: var(--color-hover-state);
+    border-radius: var(--border-radius);
+}
+
+.tests-list-item:hover .tests-list-item-delete {
+    opacity: 1;
+}
+
+.tests-list-item-link {
+    padding-left: 32px;
+    width: 100%;
+}
+
+.tests-list-item-delete {
+    padding: 4px 16px;
+    border-radius: 6px;
+    opacity: 0;
+}
+
+.tests-list-item-delete:hover {
+    background-color: var(--color-negative-status);
+}
+
+.add-test-btn {
+    width: 70px;
+    height: 67px;
+    border: 1px solid var(--color-border-color);
+    border-radius: var(--border-radius);
+    position: absolute;
+    right: 52px;
+    bottom: 64px;
+}
+
+.add-test-btn:hover {
+    background-color: var(--color-hover-state);
+}
+
+.add-test-btn::before,
+.add-test-btn::after {
+    content: '';
+    width: 24px;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.add-test-btn::before,
+.add-question-btn::before {
+    rotate: 90deg;
+}
+
+.add-question-btn,
+.remove-question-btn {
+    width: 36px;
+    height: 36px;
+    position: relative;
+    padding: 16px;
+    border: 1px solid var(--color-border-color);
+    border-radius: var(--border-radius);
+}
+
+.add-question-btn:hover,
+.remove-question-btn:hover {
+    background-color: var(--color-hover-state);
+}
+
+.add-question-btn::before,
+.add-question-btn::after,
+.remove-question-btn::after {
+    content: '';
+    width: 8px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: #000;
+}
+
+.new-test-modal {
+    width: 720px;
+    position: absolute;
+    left: 50%;
+    top: -400px;
+    translate: -50%;
+    border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+    .new-test-modal {
+        max-width: calc(100% - 56px);
+    }
+}
+
+.new-test-modal[open] {
+    animation: modal-open 0.4s forwards;
+}
+
+.new-form-title {
+    margin-bottom: 32px;
+}
+
+.new-test-form {
+    padding: 32px;
+}
+
+.new-test-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.new-test-main {
+    margin: 16px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .new-test-main {
+        gap: 16px;
+    }
+}
+
+.new-test-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 58vh;
+    overflow-y: auto;
+}
+
+.new-question {
+    width: 416px;
+}
+
+@media (max-width: 768px) {
+    .new-question {
+        width: 100%;
+    }
+}
+
+.new-question-name {
+    display: block;
+    margin: 8px 0 16px;
+    width: 100%;
+}
+
+.new-question-options {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 16px;
+}
+
+@media (max-width: 768px) {
+    .new-question-options {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.new-option {
+    display: flex;
+    gap: 16px;
+}
+
+.new-option-text {
+    width: 100%;
+}
+
+.new-test-actions {
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width: 400px) {
+    .new-test-actions {
+        flex-direction: column;
+    }
+}
+
+.save-test-btn {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.save-test-btn:hover {
+    background-color: var(--color-hover-state);
+}
+
+.error-message {
+    height: 22px;
+    margin: 20px 0 28px;
+    opacity: 0;
+    color: var(--color-negative-status);
+}

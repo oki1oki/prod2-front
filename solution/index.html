@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./index.css" />
+        <title>PROD 2</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="title" test-id="list-title">Добро пожаловать</h1>
+            <p class="subtitle" test-id="list-subtitle">Сайт посвящен прохождению тестов. Выберите тест, который хотите пройти.</p>
+        </header>
+        <main>
+            <ul class="tests-list" test-id="list-items"></ul>
+
+            <button class="add-test-btn" test-id="list-add-button"></button>
+        </main>
+
+        <dialog class="new-test-modal" test-id="form-modal">
+            <form class="new-test-form">
+                <h2 class="new-form-title" test-id="form-title">Создание теста</h2>
+                <div class="new-test-title">
+                    <label for="new-test-title">Укажите название теста</label>
+                    <input type="text" id="new-test-title" test-id="new-test-title" />
+                </div>
+                <div class="new-test-main">
+                    <div class="new-test-questions">
+                        <div class="new-question">
+                            <label for="q1">Вопрос 1</label>
+                            <input type="text" id="q1" class="new-question-name" test-id="new-test-question" />
+                            <div class="new-question-options" test-id="new-test-options">
+                                <div class="new-option">
+                                    <input type="radio" id="" name="option" />
+                                    <input type="text" class="new-option-text" />
+                                </div>
+                                <div class="new-option">
+                                    <input type="radio" id="" name="option" />
+                                    <input type="text" class="new-option-text" />
+                                </div>
+                                <div class="new-option">
+                                    <input type="radio" id="" name="option" />
+                                    <input type="text" class="new-option-text" />
+                                </div>
+                                <div class="new-option">
+                                    <input type="radio" id="" name="option" />
+                                    <input type="text" class="new-option-text" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-test-actions">
+                        <button type="button" class="add-question-btn" test-id="add-question-button"></button>
+                        <button type="button" class="remove-question-btn" test-id="remove-question-button"></button>
+                    </div>
+                </div>
+                <p class="error-message"></p>
+                <button class="save-test-btn" test-id="save-button">Сохранить</button>
+            </form>
+        </dialog>
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
