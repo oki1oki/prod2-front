@@ -2,6 +2,14 @@
 @import 'variables.css';
 @import 'reset.css';
 
+body:has(dialog[open]) {
+    overflow: hidden;
+}
+
+dialog[open] {
+    animation: modal-open 0.4s forwards;
+}
+
 input {
     border: 1px solid var(--color-border-color);
     border-radius: 6px;

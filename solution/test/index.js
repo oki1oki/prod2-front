@@ -1,7 +1,6 @@
 import {RunTestService} from '/services/run-test.service';
 import {storage, saveMockData} from '/utils/storage';
 
-const testsBtn = document.querySelector('.tests-btn');
 const prevBtn = document.querySelector('.prev-question-btn');
 const nextBtn = document.querySelector('.next-question-btn');
 const endTestBtn = document.querySelector('.end-test-btn');
