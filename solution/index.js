@@ -1,6 +1,6 @@
-import {ManageTestService} from './services/manage-test.service';
-import {resetNewTestForm} from './utils/reset-new-test-form';
-import {saveMockData} from './utils/storage';
+import {ManageTestService} from '/services/manage-test.service';
+import {resetNewTestForm} from '/utils/reset-new-test-form';
+import {saveMockData} from '/utils/storage';
 
 const addTestBtn = document.querySelector('.add-test-btn');
 const addQuestionBtn = document.querySelector('.add-question-btn');

@@ -1,5 +1,5 @@
-import {RunTestService} from '../services/run-test.service';
-import {storage, saveMockData} from '../utils/storage';
+import {RunTestService} from '/services/run-test.service';
+import {storage, saveMockData} from '/utils/storage';
 
 const testsBtn = document.querySelector('.tests-btn');
 const prevBtn = document.querySelector('.prev-question-btn');
