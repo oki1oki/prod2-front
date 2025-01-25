@@ -131,7 +131,7 @@ main {
 
 .new-test-modal {
     width: 720px;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: -400px;
     translate: -50%;
