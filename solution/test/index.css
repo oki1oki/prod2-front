@@ -232,7 +232,3 @@ main {
     display: flex;
     gap: 16px;
 }
-
-.modal[open] {
-    animation: modal-open 0.4s forwards;
-}

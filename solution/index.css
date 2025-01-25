@@ -144,10 +144,6 @@ main {
     }
 }
 
-.new-test-modal[open] {
-    animation: modal-open 0.4s forwards;
-}
-
 .new-form-title {
     margin-bottom: 32px;
 }

@@ -187,12 +187,12 @@ export class RunTestService {
 
         modal.showModal();
 
-        endTestBtn.style.display = 'none';
-        repeatTestBtn.style.display = 'block';
-
         yesBtn.addEventListener('click', () => {
             this.useTestState.toggleTestComplete();
             this.main.querySelectorAll('.option').forEach(item => (item.disabled = true));
+
+            endTestBtn.style.display = 'none';
+            repeatTestBtn.style.display = 'block';
 
             modal.innerHTML = resultTestModalTpl(result);
             const understandBtn = modal.querySelector('button[id=understand]');

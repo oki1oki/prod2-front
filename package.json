@@ -4,7 +4,7 @@
     "license": "UNLICENSED",
     "type": "module",
     "scripts": {
-        "start": "vite --host solution",
+        "start": "vite solution",
         "build": "vite build",
         "preview": "vite preview"
     },
