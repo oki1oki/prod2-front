@@ -5,6 +5,7 @@ export default defineConfig({
     root: 'solution',
     build: {
         outDir: '../dist',
+        emptyOutDir: true,
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'solution/index.html'),
