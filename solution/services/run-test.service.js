@@ -1,5 +1,5 @@
 import {ActiveTestStore} from './utils/active-test-store';
-import {endTestModalTpl, navbarItemTpl, questionCardTpl, repeatTestModalTpl, resultTestModalTpl} from './utils/templates';
+import {endTestModalTpl, navbarItemTpl, questionCardTpl, repeatTestModalTpl, resultTestModalTpl} from '../utils/templates';
 
 export class RunTestService {
     constructor(test) {
