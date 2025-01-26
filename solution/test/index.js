@@ -29,13 +29,4 @@ document.addEventListener('DOMContentLoaded', async () => {
     nextBtn.addEventListener('click', runTestService.nextQuestion);
     endTestBtn.addEventListener('click', runTestService.endTest);
     repeatTestBtn.addEventListener('click', runTestService.repeatTest);
-
-    const modal = document.querySelector('.modal');
-
-    modal.addEventListener('click', e => {
-        // Клик на backdrop
-        if (e.target === modal) {
-            modal.close();
-        }
-    });
 });
