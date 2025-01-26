@@ -1,4 +1,4 @@
-import {ActiveTestStore} from './utils/active-test-store';
+import {ActiveTestStore} from '../utils/active-test-store';
 import {endTestModalTpl, navbarItemTpl, questionCardTpl, repeatTestModalTpl, resultTestModalTpl} from '../utils/templates';
 
 export class RunTestService {
