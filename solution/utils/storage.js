@@ -17,7 +17,7 @@ export const storage = new Storage();
 export const saveMockData = async () => {
     if (!storage.get('tests')?.length) {
         try {
-            const res = await fetch('./data.json');
+            const res = await fetch('/data.json');
             const testsData = await res.json();
 
             storage.set(
