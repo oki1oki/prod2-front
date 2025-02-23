@@ -1,1 +1,1 @@
-# PROD 2025 этап 2: Frontend
+# A repository containing the solution for the second stage of the PROD competition
